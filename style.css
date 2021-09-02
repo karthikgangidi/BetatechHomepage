@@ -1,0 +1,223 @@
+/* google API fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200&display=swap');
+
+/* Global Styles */
+*{
+    font-family:'IBM Plex Sans Arabic', sans-serif;
+    font-size: 12px;
+    font-weight: 400;   
+}
+body{    
+margin: 0;
+}
+h1,h2,h3,h4{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:700;
+}
+h1{
+    font-size:2rem;
+}
+h2{
+    font-size: 1.75rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin:0;
+    font-weight:600;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:200;  
+    font-size: 1.25rem;
+    margin:0;
+    text-indent:10px;
+    letter-spacing:1px;
+    line-height: 30px;
+}
+/* navigation bar*/
+nav {
+    height: 80px;
+    position:fixed;
+     width: 100%;
+     top:0;
+    align-items: center;
+    float: right;  
+    display: block;
+    
+}
+nav ul{
+    list-style: none;
+}
+/* logo size */
+img.logo{
+    height: 90px;
+    margin: 10px 0;
+    margin-left:30px;
+}
+/* nav content specification*/
+nav a{
+    margin:15px;
+    float: right;
+    color:black;
+    font-size: 2rem;
+    text-decoration: none;
+    
+}
+/* media queries */
+@media only screen and (max-width: 768px) {
+    .links a {
+        display: none;
+    }
+
+    nav .burgermenu {
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    nav button {
+        display: none;
+    }
+
+}
+/* header image specification under the navbar*/
+header{
+    background-image: url("./background3.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    color:black;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+}
+header h1{
+    max-width:800px;
+    margin:60px;
+}
+/* background color and font of team*/
+.description{
+    background-color: rgba(0, 0, 0, 0.85);
+    color:white;
+    width: 100%;
+    margin: 0;
+
+}
+/* What we do display in order*/
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.pic1{
+    background-image: url("./planning.jpg");
+    background-size: cover;
+    height: 250px;
+    width:250px;
+    margin-bottom: 15px;
+}
+.pic2{
+    background-image: url("./custom.jpg");
+    background-size: cover;
+    height: 250px;
+    width:250px;
+    margin-bottom: 15px;
+}
+.pic3{
+    background-image: url("./ecommerce.jpg");
+    background-size: cover;
+    height: 250px;
+    width:250px;
+    margin-bottom: 15px;
+}
+.pic4{
+    background-image: url("./mobile.jpg");
+    background-size: cover;
+    height: 250px;
+    width:250px;
+    margin-bottom: 15px;
+}
+.pic5{
+    background-image: url("./bespoke.jpg");
+    background-size: cover;
+    height: 250px;
+    width:250px;
+    margin-bottom: 15px;
+}
+.container a{
+    color:black;
+    padding: 15px 20px;
+    margin:20px 50px;
+    display:grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+/* hover over the products*/
+.concept:hover{
+    background-color:rgb(62,62,62);
+    color:white;
+    cursor: pointer;
+}
+/* grid display of team */
+.images{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    
+}
+/* images specification*/
+.image{
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items:flex-end;
+    flex-grow: 1;
+}
+#image1{
+    background-image:url("./ceo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#image2{
+    background-image: url("./project\ mgr.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#image3{
+    background-image: url("./web\ designer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#image4{
+    background-image: url("./web\ developer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* contacts*/
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 280px;
+    padding-right: 40px;
+    margin: 20px 0;
+    flex-grow: 1;
+}
+#map{
+    width: 280px;
+    height: auto;
+    flex-grow: 2;
+}
+footer{
+    padding: 5px 30px;
+    border-top: 2px solid #282B37;
+    text-align: center;
+}
